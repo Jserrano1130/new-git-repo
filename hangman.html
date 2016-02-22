@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Hangman Game </h1>
+
+    <div id="game">
+
+    </div>
+    
+
+<script type="text/javascript">
+    var listOfAnimals = ["giraffe", "cat", "possum", "eagle", ];
+    var animal = listOfAnimals[Math.floor(Math.random() * listOfAnimals.length)];
+    var userGuesses = [];
+    var wordHTML = "";
+
+    for(var i=0; i < animal.length; i++){
+        wordHTML = wordHTML + " _ ";
+    }
+
+    document.querySelector('#game').innerHTML = wordHTML;
+
+ 
+
+</script>
+</body>
+</html>
