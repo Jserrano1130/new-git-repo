@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy</title>
+	<style type="text/css">
+	* {
+    /*  padding: 10px;
+      margin: 10px;
+      box-sizing: border-box;*/
+      font: 200 10px/20px Georgia, serif;
+          }
+
+   </style>
+	
+</head>
+<body>
+	<form id = "form1"> 
+	<input stuff="stuff" type="text"  size="20">
+	</form>
+	<button onclick="userinput()">Submit</button>
+
+
+<script type="text/javascript">
+function=userinput() {
+	var=x,y
+	x=document.getElementById("form1");
+	y=x.elements["stuff"].value;
+
+
+
+
+	var api = "http://api.giphy.com/v1/gifs/serach?";
+	var apikey = "&api_keydc6zaTOxFJmzC";
+	var query = "&q=y"
+
+
+function setup() 
+	noCanvas(); //i dont understand this bit, what is the canvas about. 
+	var url = api + apiKey + query;
+	loadJSON(url, gotData);
+}
+
+function gotData(giphy) {
+	for (var i = 0; i < giphy.data.lenght; i++) {
+		<a><img src = ""></a> //i need an image function but i dont know how to do it here
+	}
+}
+</script>
+
+<p id= ></p>
+</body>
+
+
+</html>
